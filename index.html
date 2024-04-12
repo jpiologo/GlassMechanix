@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Glass Mechanix Brasil</title>
+</head>
+<body>
+    <header>
+        <section id="top-nav">
+        <nav class="nav">
+            <a href="index.html"><img id="nav-logo" src="./assets/glassmechanix vermelho.png" alt="Glass Mechanix Logo"></a>
+            <ul class="nav-list">
+                <li><a class="nav-links" href="#">Home</a></li>
+                <li><a class="nav-links" href="#">Tecnologia</a></li>
+                <li><a class="nav-links" href="#">Serviços</a></li>
+            </ul>
+        </nav>
+        <!-- Spacing -->
+        <button class="contact-button"><strong>Contato</strong></button>
+        </section>
+
+        <section id="qp-header">
+            <h1 class="qp-header-title">Clareza em cada reparo<br>segurança em seu trajeto.</h1>
+            <p class="qp-header-p">Há duas décadas realizando reparos de para-brisas em Curitiba-PR e região metropolitana,<br>a Glass Mechanix Brasil é sinônimo de experiência e excelência no ramo.</p>
+        </section>
+
+        <section id="social-media">
+            <ul class="social-buttons">
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
+        </section>
+    </header>
+
+    <main>
+        
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="./assets/campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
+                <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
+            </div>
+            <div class="prev" onclick="prevSlide()">&#10094;</div>
+            <div class="next" onclick="nextSlide()">&#10095;</div>
+        </div>
+
+
+    </main>
+
+    <script src="./scripts/slider.js"></script>
+</body>
+</html>
