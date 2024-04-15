@@ -1,34 +1,92 @@
-.slider-container {
-    position: relative;
-    overflow: hidden;
-    height: 30vh;
-}
 .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-.slide {
-    min-width: 100%;
+    width: 100%;
     overflow: hidden;
-}
-img {
+    position: relative;
+    max-height: 40vh;
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+  }
+  
+  .slide img {
     width: 100%;
     height: auto;
-}
-.prev,
-.next {
+  }
+  
+  .prev, .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
+    font-size: 50px;
     cursor: pointer;
-    border-radius: 60px;
-}
-.prev {
+    z-index: 1;
+  }
+  
+  .prev {
     left: 10px;
-}
-.next {
+  }
+  
+  .next {
     right: 10px;
-}
+  }
+
+  .testimonial-slider {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .testimonial {
+    display: none;
+    text-align: center; /* Center the testimonial content */
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .author {
+    font-style: italic;
+    color: #666; /* Author text color */
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with transparency */
+    padding: 10px 15px;
+    border: 1px solid #ccc; /* Add border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Add hover effect for buttons */
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Lighten the background on hover */
+  }
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    .prev, .next {
+      font-size: 16px;
+    }
+  }

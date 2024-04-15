@@ -10,8 +10,6 @@
 
 header {
     background: linear-gradient(0deg,#e12726,#c00b0c,#000000);
-    background-size: 110% 100%;
-    animation: gradient 5s ease-out infinite;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -97,6 +95,42 @@ header {
 .fa:hover {
     color: var(--light-grey);
 }
+
+@media screen and (max-width: 1075px) {
+
+    .nav-list {
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    #nav-logo {
+        width: 140px;
+    }
+
+    .contact-button {
+        width: 140px;
+    }
+
+    .qp-header-title {
+        font-size: 30px;
+        margin-bottom: 5%;
+    }
+
+    .qp-header-p {
+        font-size: 14px;
+    }
+
+    .social-buttons {
+        gap: 10%;
+    }
+
+
+}
+
+
 
 
 @keyframes gradient {

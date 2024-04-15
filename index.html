@@ -17,12 +17,12 @@
             <a href="index.html"><img id="nav-logo" src="./assets/glassmechanix vermelho.png" alt="Glass Mechanix Logo"></a>
             <ul class="nav-list">
                 <li><a class="nav-links" href="#">Home</a></li>
-                <li><a class="nav-links" href="#">Tecnologia</a></li>
                 <li><a class="nav-links" href="#">Serviços</a></li>
+                <li><a class="nav-links" href="#">Tecnologia</a></li>
             </ul>
         </nav>
         <!-- Spacing -->
-        <button class="contact-button"><strong>Contato</strong></button>
+        <button id="contact-button" class="contact-button"><strong>Contato</strong></button>
         </section>
 
         <section id="qp-header">
@@ -40,19 +40,75 @@
 
     <main>
         
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide"><img src="./assets/campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="Image 1"></div>
-                <div class="slide"><img src="image2.jpg" alt="Image 2"></div>
-                <div class="slide"><img src="image3.jpg" alt="Image 3"></div>
+        <div class="slider">
+            <div class="slide">
+                <img src="./assets/viktor-theo-1rw3l343EDM-unsplash.jpg" alt="Slide 1">
             </div>
-            <div class="prev" onclick="prevSlide()">&#10094;</div>
-            <div class="next" onclick="nextSlide()">&#10095;</div>
+            <div class="slide">
+                <img src="./assets/campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="./assets/julian-hochgesang-AetmDwMVzio-unsplash.jpg" alt="Slide 3">
+            </div>
+            
+            <!-- Navigation buttons -->
+            <span class="prev" onclick="plusSlide(-1)">&#10094;</span>
+            <span class="next" onclick="plusSlide(1)">&#10095;</span>
         </div>
+
+        <div class="testimonial-ini">
+            <h1 class="testimonial-title">Reviews</h1>
+        </div>
+
+        <div class="testimonial-slider">
+
+            <div class="testimonial">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam."</p>
+                <p class="author">- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <p>"Aenean fermentum elit eget tincidunt consequat. Fusce volutpat velit at mauris faucibus, vitae dignissim diam aliquet."</p>
+                <p class="author">- Jane Smith</p>
+            </div>
+            <div class="testimonial">
+                <p>"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."</p>
+                <p class="author">- Michael Johnson</p>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <span class="prev" onclick="plusTestimonial(-1)">&#10094;</span>
+            <span class="next" onclick="plusTestimonial(1)">&#10095;</span>
+        </div>
+
+        <div class="services">
+            <h1 class="services-title">Serviços</h1>
+        </div>
+
+    <section id="services">
+        <div class="card">
+            <img src="image1.jpg" alt="Image 1">
+            <div class="card-content">
+              <h3>Reparos</h3><br>
+              <p>Reparos em trincas de para-brisas do tamanho até de uma moeda de real são garantidas. Para trincas de tamanho maior, favor entrar em contato.</p>
+              <a href="#" class="know-more">Saber Mais</a>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="image2.jpg" alt="Image 2">
+            <div class="card-content">
+              <h3>Descontaminação e Cristalização</h3><br>
+              <p>Description for card 2 goes here. This could be a brief overview of the content or features.</p>
+              <a href="#" class="know-more">Saber Mais</a>
+            </div>
+          </div>
+    </section>
 
 
     </main>
 
     <script src="./scripts/slider.js"></script>
+    <script src="./scripts/whatsapp.js"></script>
+    <script src="./scripts/testimonial.js"></script>
 </body>
 </html>

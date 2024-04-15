@@ -1,0 +1,151 @@
+:root {
+    --main-red: #E12726;
+    --darker-red: #c00b0c;
+    --black: #000000;
+    --white: #ffffff;
+    --light-grey: #dfdddd;
+}
+
+.testimonial-slider {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ccc; /* Add border for visual separation */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    background-color: #f9f9f9; /* Background color */
+  }
+  
+  .testimonial {
+    display: none;
+    text-align: center; /* Center the testimonial content */
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .author {
+    font-style: italic;
+    color: #666; /* Author text color */
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7); /* Background color with transparency */
+    padding: 10px 15px;
+    border: 1px solid #ccc; /* Add border for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  /* Add hover effect for buttons */
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Lighten the background on hover */
+  }
+
+  .testimonial-ini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.testimonial-title {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.card {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 20px;
+  }
+  
+  .card-content h3 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  
+  .card-content p {
+    font-size: 16px;
+  }
+  
+  .know-more {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--main-red);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .services {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+  }
+
+  .services-title {
+    font-size: 21px;
+    font-weight: 700;
+  }
+
+  #services {
+    display: flex;
+  }
+
+  @media (max-width: 845px) {
+    #services {
+        flex-direction: column;
+    }
+  }
+  
+  /* Adjust button positioning for smaller screens */
+  @media (max-width: 768px) {
+    .prev, .next {
+      font-size: 16px;
+      padding: 8px 12px;
+    }
+    
+    .prev {
+      left: 5px;
+    }
+    
+    .next {
+      right: 5px;
+    }
+
+    .card {
+        width: 90%;
+    }
+  }
+
