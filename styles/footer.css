@@ -1,0 +1,37 @@
+:root {
+    --main-red: #E12726;
+    --darker-red: #c00b0c;
+    --black: #000000;
+    --white: #ffffff;
+    --light-grey: #dfdddd;
+}
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+  
+.footer-container {
+    max-width: 80%; /* Adjust width as needed */
+    margin: 0 auto;
+}
+  
+.social-icons {
+    margin-bottom: 20px;
+}
+  
+.social-icons a {
+    display: inline-block;
+    margin: 0 20px;
+}
+  
+.social-icons img {
+    width: 40px;
+    height: 40px;
+}
+  
+footer p {
+    margin: 0;
+}
+
