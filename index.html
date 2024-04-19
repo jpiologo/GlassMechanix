@@ -15,11 +15,10 @@
     <header>
         <section id="top-nav">
         <nav class="nav">
-            <a href="index.html"><img id="nav-logo" src="./assets/glassmechanix vermelho.png" alt="Glass Mechanix Logo"></a>
+            <a href="index.html"><img id="nav-logo" src="./assets/Logos/glassmechanix vermelho.png" alt="Glass Mechanix Logo"></a>
             <ul class="nav-list">
-                <li><a class="nav-links" href="#">Home</a></li>
-                <li><a class="nav-links" href="#">Serviços</a></li>
-                <li><a class="nav-links" href="#">Tecnologia</a></li>
+                <li><a class="nav-links" href="#top-nav">Home</a></li>
+                <li><a class="nav-links" href="#services">Serviços</a></li>
             </ul>
         </nav>
         <!-- Spacing -->
@@ -33,8 +32,8 @@
 
         <section id="social-media">
             <ul class="social-buttons">
-                <li><a href="#" class="fa fa-facebook"></a></li>
-                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="https://www.facebook.com/glassmechanixbr/" target="_blank" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/glassmechanixbr/" target="_blank" class="fa fa-instagram"></a></li>
             </ul>
         </section>
     </header>
@@ -43,19 +42,21 @@
         
         <div class="slider">
             <div class="slide">
-                <img src="./assets/servico.jpeg" alt="Slide 1">
+                <img src="./assets/Slider Imgs/campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="Slide 1">
             </div>
             <div class="slide">
-                <img src="./assets/campbell-3ZUsNJhi_Ik-unsplash.jpg" alt="Slide 2">
+                <img src="./assets/Slider Imgs/julian-hochgesang-AetmDwMVzio-unsplash.jpg" alt="Slide 2">
             </div>
             <div class="slide">
-                <img src="./assets/julian-hochgesang-AetmDwMVzio-unsplash.jpg" alt="Slide 3">
+                <img src="./assets/Slider Imgs/viktor-theo-1rw3l343EDM-unsplash.jpg" alt="Slide 3">
             </div>
             
             <!-- Navigation buttons -->
             <span class="prev" onclick="plusSlide(-1)">&#10094;</span>
             <span class="next" onclick="plusSlide(1)">&#10095;</span>
         </div>
+
+
 
         <div class="testimonial-ini">
             <h1 class="testimonial-title">Reviews</h1>
@@ -83,48 +84,82 @@
             <span class="next" onclick="plusTestimonial(1)">&#10095;</span>
         </div>
 
-        <div class="services">
-            <h1 class="services-title">Serviços</h1>
-        </div>
+    <!-- -------------------SEÇÃO DE SERVIÇOS--------------------------->
+    <!-- Padrão de imagens 1920 x 500 -->
+
+    <div class="services">
+        <h1 class="services-title">Serviços</h1>
+    </div>
 
     <section id="services">
         <div class="card">
-            <img src="./assets/trinca.jpeg" alt="Image 1">
+            <img src="./assets/Cards Imgs/trinca.jpeg" alt="Imagem de trinca em um para-brisas">
             <div class="card-content">
-              <h3>Reparos</h3><br>
-              <p>Reparos em trincas de para-brisas do tamanho de até uma moeda de real são garantidas. Para trincas maiores, favor entrar em contato.</p>
-              <a href="#" class="know-more">Saber Mais</a>
+                <h3>Reparos</h3><br>
+                <p>Nosso serviço de reparo de trincas de para-brisa restaura a integridade estrutural, impedindo que pequenas fissuras se espalhem, mantendo a segurança do veículo e evitando a substituição cara do para-brisa.<br></p>
+                <a href="#" class="know-more" data-target="additional-info-1">Saber Mais</a>
             </div>
-          </div>
+        </div>
+        
+        <div class="additional-info" id="additional-info-1" style="display: none;">
+            <div class="additional-card">
+                <h3>Reparo de para-brisas: <br><br> </h3>
+                <p>O parabrisa de todo veículo sofre torções da carroceria, trepidação devido imperfeições nas vias, variações de temperatura e pressão do vento em altas velocidades. Dito isso, qualquer fissura (trinca) que exista na lâmina externa do vidro pode aumentar a qualquer momento! Impossível determinar quando pois isso depende de muitas variáveis como descritas acima. Ao se formar uma trinca devido uma batida de pedra, ocorre que o atrito no interior da mesma aumenta nos momentos em que o vidro sofra alguma torção fazendo com que a trinca vá evoluindo de tamanho aos poucos ou muito.....tudo depende da tensão sofrida no ponto de impacto. O reparo consiste em aliviar a tensão com uma pequena broca removendo o vidro que foi praticamente moído proveniente do impacto sofrido e preenchimento com uma resina acrílica. Tudo isso executado com equipamento/material e conhecimento profissional certificado pela <a class="gm-link" href="https://glassmechanix.com/" target="_blank" >Glass Mechanix USA.</a><br><br><br></p>
+                <a class="agende-ja" target="_blank" href="https://api.whatsapp.com/send/?phone=5541991793386&text=Ol%C3%A1%21+Gostaria+de+conversar+sobre+Reparo%2FCristaliza%C3%A7%C3%A3o%2FPolimento.&type=phone_number&app_absent=0">Agende aqui!<br><br><br><br></a>
+                <button class="close-btn">Fechar</button>
+            </div>
+        </div>
+        
+        <!-- Segundo card -->
+        <div class="card">
+            <img src="./assets/Cards Imgs/generic-windshield.jpg" alt="Imagem de cristalização em para-brisas">
+            <div class="card-content">
+                <h3>Descontaminação e Cristalização:</h3><br>
+                <p>Maximize a visibilidade e durabilidade do para-brisas. Remove impurezas e aplica um revestimento hidrofóbico para repelir a água. Aumente a segurança do seu veículo em todas as condições climáticas.</p>
+                <a href="#" class="know-more" data-target="additional-info-2">Saber Mais</a>
+            </div>
+        </div>
+        
+        <div class="additional-info" id="additional-info-2" style="display: none;">
+            <div class="additional-card">
+                <h3>Descontaminação e Cristalização: <br><br> </h3>
+                <p>Primeiramente, realizamos a descontaminação do para-brisa, eliminando depósitos de calcificação hídrica que o tornam áspero e com marcas persistentes, além de imperceptíveis em lavagens convencionais. Em seguida, aplicamos um polimento com um composto de óxido de cério para remover resíduos remanescentes e até mesmo riscos leves, restaurando o brilho e a nitidez do para-brisa. Para garantir uma maior proteção e durabilidade, finalizamos com a aplicação de uma solução hidrofóbica. Importante ressaltar que não é indicado para remover riscos profundos.<br><br><br></p>
+                <a class="agende-ja" target="_blank" href="https://api.whatsapp.com/send/?phone=5541991793386&text=Ol%C3%A1%21+Gostaria+de+conversar+sobre+Reparo%2FCristaliza%C3%A7%C3%A3o%2FPolimento.&type=phone_number&app_absent=0">Agende aqui!<br><br><br><br></a>
+                <button class="close-btn">Fechar</button>
+            </div>
+        </div>
 
-          <div class="card">
-            <img src="./assets/trinca.jpeg" alt="Image 1">
+        <!-- Terceiro card -->
+        <div class="card">
+            <img src="./assets/Cards Imgs/polishing.jpg" alt="Image 2">
             <div class="card-content">
-              <h3>Polimento</h3><br>
-              <p>Reparos em trincas de para-brisas do tamanho de até uma moeda de real são garantidas. Para trincas maiores, favor entrar em contato.</p>
-              <a href="#" class="know-more">Saber Mais</a>
+                <h3>Polimento</h3><br>
+                <p>O polimento de para-brisas restaura a transparência e a visibilidade, removendo arranhões e manchas, garantindo uma condução segura e sem distrações.</p>
+                <a href="#" class="know-more" data-target="additional-info-3">Saber Mais</a>
             </div>
-          </div>
-          
-          <div class="card">
-            <img src="./assets/crist.jpeg" alt="Image 2">
-            <div class="card-content">
-              <h3>Descontaminação e Cristalização</h3><br>
-              <p>Maximize a visibilidade e durabilidade do para-brisas. Remove impurezas e aplica um revestimento hidrofóbico para repelir a água. Aumente a segurança do seu veículo em todas as condições climáticas.</p>
-              <a href="#" class="know-more">Saber Mais</a>
+        </div>
+        
+        <div class="additional-info" id="additional-info-3" style="display: none;">
+            <div class="additional-card">
+                <h3>Informações Adicionais</h3>
+                <p>Pendente de texto.<br><br><br></p>
+                <a class="agende-ja" target="_blank" href="https://api.whatsapp.com/send/?phone=5541991793386&text=Ol%C3%A1%21+Gostaria+de+conversar+sobre+Reparo%2FCristaliza%C3%A7%C3%A3o%2FPolimento.&type=phone_number&app_absent=0">Agende aqui!<br><br><br><br></a>
+                <button class="close-btn">Fechar</button>
             </div>
-          </div>
+        </div>
+
     </section>
+    
 
     <footer>
         <div class="footer-container">
           <div class="social-icons">
-            <a href="#" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg></a>
-            <a href="#" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path></svg></a>
+            <a href="https://www.instagram.com/glassmechanixbr/" target="_blank" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg></a>
+            <a href="https://www.facebook.com/glassmechanixbr/" target="_blank" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h8.615v-6.96h-2.338v-2.725h2.338v-2c0-2.325 1.42-3.592 3.5-3.592.699-.002 1.399.034 2.095.107v2.42h-1.435c-1.128 0-1.348.538-1.348 1.325v1.735h2.697l-.35 2.725h-2.348V21H20a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1z"></path></svg></a>
           </div>
           <p>&copy; 2024 Glass Mechanix Brasil. All rights reserved.</p>
         </div>
-      </footer>
+    </footer>
 
 
     </main>
@@ -132,5 +167,6 @@
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/whatsapp.js"></script>
     <script src="./scripts/testimonial.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
