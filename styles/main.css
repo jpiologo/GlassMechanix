@@ -38,7 +38,7 @@
     font-size: 20px;
     cursor: pointer;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.7); /* Background color with transparency */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color with transparency */
     padding: 10px 15px;
     border: 1px solid #ccc; /* Add border for buttons */
     border-radius: 5px; /* Rounded corners for buttons */
@@ -50,11 +50,6 @@
   
   .next {
     right: 10px;
-  }
-  
-  /* Add hover effect for buttons */
-  .prev:hover, .next:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Lighten the background on hover */
   }
 
   .testimonial-ini {
@@ -126,6 +121,10 @@
     margin-top: 20px;
   }
 
+  .know-more:hover {
+    background-color: var(--darker-red);
+  }
+
   .additional-info {
     position: fixed;
     top: 0;
@@ -148,7 +147,7 @@
 }
 
 .close-btn {
-    background-color: #ff0000;
+    background-color: var(--main-red);
     color: white;
     border: none;
     padding: 5px 10px;
@@ -157,7 +156,7 @@
 }
 
 .gm-link {
-  color: #0000EE;
+  color: var(--main-red);
 }
 
 .agende-ja {
